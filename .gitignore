@@ -1,0 +1,4 @@
+terraform/.terraform
+terraform/.terraform.lock.hcl
+tf-statebucket-optional/.terraform
+tf-statebucket-optional/.terraform.lock.hcl
