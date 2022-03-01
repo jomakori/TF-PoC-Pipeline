@@ -28,7 +28,7 @@ resource "null_resource" "image" {
        git remote add origin ${aws_codecommit_repository.code_repo.clone_url_http}
        git push -u origin master
    EOF
-    working_dir = "showcase_flask_app" #"web_app"
+    working_dir = "MyWebApp" #"web_app"
   }
   depends_on = [
     aws_codecommit_repository.code_repo,
@@ -43,7 +43,7 @@ resource "null_resource" "clean_up" {
     command     = <<EOF
        rm -rf .git/
    EOF
-    working_dir = "showcase_flask_app" #"web_app"
+    working_dir = "MyWebApp" #"web_app"
 
   }
 }
