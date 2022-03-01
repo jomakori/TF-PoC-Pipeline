@@ -1,0 +1,3 @@
+[submodule "terraform/MyWebApp"]
+	path = terraform/MyWebApp
+	url = git@github.com:jomakori/jomakori-poc-repo.git
